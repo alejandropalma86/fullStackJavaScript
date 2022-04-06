@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+  <title>Ejercicio CSS Alejandro Palma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ===== Link Swiper's CSS ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="icon" href="img/cropped-Favicon_Venn.png">
+  <script src="https://kit.fontawesome.com/c49481d510.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body class="grid-container">
+  <!-- INICIA HEADER -->
+  <header class="header">
+    <div class="header-container">
+      
+      <img id ="logo" src="img/Grupo-6581403x.webp" alt="Logo">
+      <span class="span-big">Comparte tu conocimiento en línea</span>
+      <span>Bienvenido a Venn, una plataforma para dar cursos online con todas las opciones que necesitas para enseñar en línea,
+        <strong style="color: #1489ff;">
+          <br>
+          "¡Crea tu cuenta gratuita!"
+        </strong>
+      </span>
+      <button class="btnRegis">Crea tu cuenta gratis</button>
+      </div>
+      
+    
+  </header>
+  <!-- TERMINA HEADER -->
+
+
+  <!-- INICIA SECCION 1 -->
+  <section class="section1">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+        <!-- ITEM1 -->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="img/Andrea.png" alt="">
+            </div>
+            <div class="description">
+              <div class="name">
+                <h2 class="name">Andrea</h2>
+                <h4 class="profession">Marketing</h4>
+              </div>
+              <div class="stars">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+              </div>
+              <h6>Tenía tiempo buscando una plataforma en donde
+                hacer mis talleres, lo acabo de hacer en Venn. Si eres terapeuta y estás buscando una
+                plataforma que funcione sin VPN, ÉSTA FUNCIONA MUY BIEN, fue una experiencia
+                bellísima y el grupo estuvo buenísimo!</h6>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM1 -->
+        <!-- ITEM2 -->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="img/Ale.png" alt="">
+            </div>
+            <div class="description">
+              <div class="name">
+                <h2 class="name">Alejandra</h2>
+                <h4 class="profession">LifeCoach</h4>
+              </div>
+              <div class="stars">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+              </div>
+              <h6>Escuchen su intuición, hagan una visión, tengan un plan y estén atentos a las oportunidades
+                 que siempre aparecen.
+                 Súper emocionada de empezar a trabajar con las personas que de verdad inspiran.</h6>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM2 -->
+        <!-- ITEM3 -->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="img/Ana.png" alt="">
+            </div>
+            <div class="description">
+              <div class="name">
+                <h2 class="name">Ana</h2>
+                <h4 class="profession">Psicóloga</h4>
+              </div>
+              <div class="stars">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+                <img src="img/star.webp" alt="">
+              </div>
+              <h6>Gracias por comprar mi curso, en la plataforma de venntors.com, tendrán todo el seguimiento,
+                 ellos envían los correos y en su cuenta tienen todo lo necesario para entrar, 
+                 no se necesita que el Venntor envíe ningún enlace, todo está en la plataforma.</h6>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM3 -->
+        </div>
+      </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      autoplay: true,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- TERMINA SECCION 1 -->
+
+
+  <!-- INICIA SECCION 2 -->
+
+  <div class="section2">
+    <span class="span-big">Herramientas para crear tu <br> curso online </span>
+    <div class="container-products">
+    <!-- Productos -->
+      <div class="cardP">
+        <div class="cardP-image">
+          <img src="/img/Sesiones_Vivox2.png" alt="">
+        </div>
+            
+        <div>
+          <div class="cardP-title">Sesiones en Vivo</div>
+          <p class="cardP-text">Un espacio para enseñar
+              y resolver dudas al momento.
+          </p>
+        </div>
+      </div>
+    
+
+    
+        <div class="cardP">
+          <div class="cardP-image">
+              <img src="/img/Cursos-Pre-Grabadosx2.png" alt="">
+          </div>
+          <div>
+            <div class="cardP-title">Cursos Pre Grabados</div>
+            <p class="cardP-text">Solo carga tu curso en la plataforma
+                y genera ingresos pasivos.
+            </p>
+          </div>
+        </div>
+      
+
+        <div class="cardP">
+          <div class="cardP-image">
+              <img src="/img/Mentorias_1_1x2.png" alt="">
+          </div>
+          <div>
+            <div class="cardP-title">Mentorías 1 a 1</div>
+            <p class="cardP-text">Tiempo exclusivo para trabajar de forma individual 
+                con tu aprendiz.
+            </p>
+          </div>
+        </div>
+      
+  </div>
+  <button class="btnRegis">Crea tu cuenta gratis</button>
+    </div>
+  
+   <!-- TERMINA SECCION 2 -->
+
+
+   <!-- INICIA SECCION 3 --> 
+  <div class="section3">
+      <div class="contSection3">
+        <span class="span-big">Es un proceso muy simple</span> 
+        <div class="section3columns">
+            <div class="column">
+                <img  src="img/Grupo 7020.webp" alt="">
+                <div class="img_1"></div>
+                <span>Crea tu cuenta</span>
+            </div>
+
+            <div class="column">
+                <img src="img/Grupo 7022.webp" alt="">
+                <div class="img_2"></div>
+                <span>Completa tu perfil</span>
+            </div>
+
+            <div class="column">
+                <img src="img/Grupo 7021.webp" alt="">
+                <div class="img_3"></div>
+                <span>Crea tu curso online</span>
+            </div>
+        
+        </div>
+
+    </div>
+      <button class="btnRegis">Crea tu cuenta gratis</button>
+    </div>
+      
+  <!-- TERMINA SECCION 3 -->
+
+  <!-- INICIA SECCION 4 -->
+  <div class="section4">
+    <span class="span-big">Somos una plataforma <br> que lo tiene todo</span>
+   <div class="contSection4">
+     <div class="mini-card">
+       <img src="img/Grupo 7051.webp" alt="">
+       <span>Creación de Productos</span>
+       <span class="b">Gratuitos</span>
+     </div>
+     <div class="mini-card">
+      <img src="img/Grupo 7056.webp" alt="">
+      <span>Cursos Pre Grabados</span>
+      <span class="b">Ilimitados</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7047.webp" alt="">
+      <span>Sesiones en Vivo</span>
+      <span class="b">Ilimitadas</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7049.webp" alt="">
+      <span>Mentorías 1 a 1</span>
+      <span class="b">Ilimitadas</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7058.webp" alt="">
+      <span class="b">Descarga tu Base de Datos</span>
+      <span>con solo un Clic</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7053.webp" alt="">
+      <span>Plataforma de Video</span>
+      <span class="b">Integrada</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7048.webp" alt="">
+      <span><b>Grabación</b> de tus Sesiones</span>
+      <span>en Vivo</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7057.webp" alt="">
+      <span>Generación de Certificados</span>
+      <span class="b">Automáticos</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7054.webp" alt="">
+      <span>Plataforma de Pago</span>
+      <span class="b">Integrada (Stripe/Paypal)</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7050.webp" alt="">
+      <span>Sincronización de Usos</span>
+      <span class="b">Horarios</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7055.webp" alt="">
+      <span><b>Envío de Correos</b> Masivos a</span>
+      <span>tu Base de Datos</span>
+    </div>
+    <div class="mini-card">
+      <img src="img/Grupo 7052.webp" alt="">
+      <span class="b">Recordatorios Automáticos</span>
+      <span>para Eventos en Vivo</span>
+    </div>
+   </div>
+   <button class="btnRegis">Crea tu cuenta gratis</button>
+  </div>
+  <!-- TERMINA SECCION 4 -->
+
+
+  <!-- INICIA FOOTER -->
+  <footer class="footer">
+    
+    <div class="container-footer">
+      <div class="card-footer">
+        <img id ="" src="img/Logo_venn_footer.svg" alt="">
+          <div>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color:white"></i></a></li>
+              <li><a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram" style="color:white"></i></a></li>
+              <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-linkedin" style="color:white"></i></a></li>
+              <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square" style="color:white"></i></a></li>
+              <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color:white"></i></a></li>
+              <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok" style="color:white"></i></a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="politics-footer-wrap">
+        <div class="politics-footer-group">
+          <div>
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">&copy; Venn 2022</a>  
+          </div>
+          
+        </div>
+      </div>    
+      </div>  
+  </footer>
+  <!-- TERMINA FOOTER -->
+</body>
+</html>

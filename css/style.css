@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Lato:wght@400;700;900&display=swap");
+
+
+/* ---------- MAIN --------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  width:100%;
+  overflow-x:hidden; 
+}
+
+.btnRegis{
+  color: white;
+  background: linear-gradient(0deg, #007fff 0%, #00b1ff 100%);
+  border: 1px solid transparent;
+  padding: 20px 60px 20px 60px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btnRegis:hover{
+  color: #1489ff;
+  background: white;
+  border-color: #1489ff;
+}
+
+.span-big{
+  font-size: clamp(25px,3.1vw,42px);
+  font-weight: 600;
+}
+
+.p-blue{
+  color: #1489ff;
+  font-weight: bold;
+}
+
+/* ---------- AREAS ---------- */
+.grid-container {
+  display: grid;
+  text-align: center;
+  min-width: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-auto-columns: minmax(500px, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  grid-auto-rows: minmax(125px, auto);
+  grid-template-areas:
+ "header"
+ "section1"
+ "section2"
+ "section3"
+ "section4"
+ "footer";
+}
+
+
+
+.header {
+  grid-area: header;
+  background-image:url("../img/header.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+}
+
+.section1 {
+  grid-area: section1;
+  /*background-color: #afd6af;*/
+  background-image:url("../img/section1.png");
+  /*background-image:url("../img/fila-2-columna-1.webp");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position-x: center;*/
+  padding: 100px 20px 20px 20px;
+}
+
+.section2 {
+  grid-area: section2;
+  padding: 20px 20px 0 20px;
+}
+
+
+.section3 {
+  grid-area: section3;
+  background-color: #f5f5f5;
+  padding: 40px 20px 20px 20px;
+}
+
+.section4 {
+  grid-area: section4;
+  background-color: #f5f5f5;
+  background-image:url("../img/Enmascarar\ grupo\ 259@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 20px 20px 20px;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: #0D81F6; 
+}
+
+
+/* ---------- HEADER ---------- */
+#logo{
+    display: block;
+    margin: auto;
+    max-width: 85px;
+    max-height: 120px;
+    padding-top: 40px;
+}
+
+.header-container{
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  padding: 0 20px 20px 20px 20px;
+  grid-gap: 10px;
+}
+
+
+/* ---------- SECTION 1 ---------- */
+/*----------- CAROUSEL ----------- */
+section{
+  position: block;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  max-width: 730px;
+  max-height: 650px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+
+
+.card .card-content{
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.card .card-content > div {
+  width: 50%;
+  padding: 10px;
+}
+
+.card .card-content > div:first-child {
+  margin-right: 20px;
+}
+
+section .card .image{
+  max-width: 237px;
+  max-height: 237px;
+  padding: 3px;
+}
+
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.description h2{
+  color: black;
+  font-size: 25px;
+}
+
+.description h4{
+  color: #1489ff;
+  font-size: 20px;
+}
+
+.description h6{
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.stars img{
+margin: auto;
+max-width: 20px;
+
+}
+
+.stars h4{
+  display: inline-block !important;
+  max-width: 30px;
+  padding-right: 150px;
+  }
+
+
+
+
+/* --------- SECTION 2 --------- */ 
+.container-products{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+}
+
+
+.cardP{
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  font-family: Hind;
+  font-size: 16px;
+  margin: 15px 6%;
+  padding: 15px 5%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 20px 15px 0 rgba(26,72,100 / 10%);
+  background-image: linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+  border: 1px solid rgb(230, 229, 225);
+  overflow: hidden;  
+}
+
+
+.cardP img{
+    max-width: 304px; 
+    max-height: 260px;
+    display: block;
+    margin:auto;
+  }
+
+.cardP-title{
+    color: #3381da;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+.cardP-text{
+    
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+
+/* ---------- SECTION3 --------- */
+.contSection3{
+  display: grid;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  
+  padding: 10px;
+  
+}
+
+.section3columns{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: url(../img/Rectángulo%208199.webp) no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+  padding: 0;
+  
+}
+
+.section3columns .column:first-child{
+  justify-self: start;
+}
+
+.section3columns .column:last-child{
+  justify-self: end;
+}
+
+.column div:hover{
+  cursor: pointer;
+}
+
+.section3columns .column div{
+  display: grid;
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  max-width: 130px;
+  max-height: 130px;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.img_1{
+  background: url(../img/Grupo%209210.webp) no-repeat;
+  
+}
+
+.img_1:hover{
+  background: url(../img/nuevo7023.svg) no-repeat;
+}
+
+.img_2{
+  background: url(../img/Grupo%207025.webp) no-repeat;
+}
+
+.img_2:hover{
+  background: url(../img/nuevo7025.svg) no-repeat;
+}
+
+.img_3{
+  background: url(../img/Grupo%207024.webp) no-repeat;
+}
+
+.img_3:hover{
+  background: url(../img/Grupo-7024-1.svg) no-repeat;
+}
+
+/* ---------- SECTION4 ---------- */
+.contSection4{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  /*grid-template-columns: auto auto auto;*/
+  grid-template-columns: repeat(auto-fit, 20rem);
+  padding: 10px;
+  grid-gap: 20px;
+
+}
+
+.b {
+  font-weight: bold;
+}
+
+.mini-card{
+  display: grid;
+  width: 15rem;
+  font-family: Hind;
+  font-size: 15px;
+  margin: 10px 6%;
+  padding: 10px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 20px 15px 0 rgba(26,72,100 / 10%);
+  background-image: linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+  border: 1px solid rgb(230, 229, 225);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mini-card:hover{
+  border: 1px solid #1489ff;
+}
+
+.mini-card img {
+  width: 35px; 
+  height: 35px;
+  display: block;
+  margin:auto;
+}
+
+/* ---------- FOOTER --------- */
+.container-footer{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-height: 200px;
+  /*border: 1px solid rgba(240, 139, 7, 0.925);*/
+  box-sizing: border-box;
+} 
+
+.card-footer{
+  display: flex;
+  max-width: 1000px;
+  max-height: 100px;
+  border-bottom: whitesmoke 1px solid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-footer li
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+   align-items: right;
+}
+
+.card-footer img {
+  /*width: 80px; 
+  height: 50px;*/
+  align-items: left;
+
+  max-width: 70px;
+    max-height: 105px;
+}
+
+.politics-footer-wrap{
+  display: grid;
+  width: 100%;
+  /*border: 6px salmon solid;*/
+}
+
+.politics-footer-group{
+  display: grid;
+  width: 100%;
+  grid-column: 2;
+  margin: auto !important;
+  grid-template-columns: auto, auto, auto;
+  /*border: sandybrown solid;*/
+  justify-content: end;
+ 
+}
+
+.politics-footer-group a{
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin:20px;
+}
+
+
+/* Diseño para celulares */
+@media screen and (min-width: 200px) and (max-width: 799px) and (orientation: portrait) {
+  *{
+    padding: 0;
+    width: auto;
+  }
+  html{
+    overflow-x: hidden;
+  }
+  .header,
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+		width: 80%;
+    background-image: none;
+    background-color: #f5f5f5;
+	}
+  .footer {
+    width: 80%;
+  }
+  .section3columns .column div{
+    display: grid;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+    padding: 20px;
+  }
+  .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    z-index: 100;
+  }
+  .card .card-content > div {
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+
+/* Diseño para tabletas 
+@media screen and (min-width: 800px) {
+    .header,
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .footer {
+      width:100%;
+    }
+}
+*/ 
+
+/* Diseño para PC  
+@media screen and (min-width: 1025px) {
+	.header,
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .footer{
+		width:100%;
+	}
+}
+*/
